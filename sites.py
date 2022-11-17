@@ -27,3 +27,9 @@ site_response = requests.get(url=f"{base_url}{sites_endpoint}",
                              verify=False).json()['response']
 
 print(json.dumps(site_response, indent=2))
+
+topology_endpoint = "intent/api/v1/topology/site-topology"
+topology_response = requests.get(url=f"{base_url}{topology_endpoint}",
+                                 headers=headers,
+                                 verify=False).json()['response']
+print(json.dumps(topology_response, indent=2))
