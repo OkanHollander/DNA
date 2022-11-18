@@ -1,8 +1,6 @@
 import requests
 import json
 
-import requests
-import json
 
 base_url = f"https://sandboxdnac2.cisco.com/dna/"
 auth_endpoint = "system/api/v1/auth/token"
